@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+body {
+	background-image: url(../images/mid_372067_745005.jpg);
+}
+
+.form {
+	background-color: aliceblue;
+	width: 350px;
+	font-size: 15px;
+	border-style: solid;
+	border-radius: 7px;
+	border-width: 1px;
+	border-color: #fff;
+	background-image: url(../images/images.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.fieldset {
+	border: none;
+}
+
+.legend {
+	position: relative;
+	padding-left: 3px;
+	padding-top: 10px;
+	font-weight: 600;
+}
+
+.label {
+	display: block;
+	padding-left: 3px;
+}
+
+.input {
+	display: block;
+	margin: 5px 0;
+	border-radius: 5px;
+	padding: 3px;
+	width: 200px;
+	color: #000;
+}
+
+.fieldset-1 {
+	border: none;
+	padding-top: 0;
+	margin-top: -10px;
+}
+
+.textarea {
+	display: block;
+	margin: 5px 0 0 4px;
+	border-radius: 5px;
+	padding: 5px;
+	resize: vertical;
+	min-height: 50px;
+	max-height: 100px;
+	width: 200px;
+	color: #000;
+}
+
+.label-1 {
+	padding-left: 3px;
+	margin: 10px 0;
+}
+
+.checkbox {
+	margin: 10px 0;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.button {
+	border: none;
+	display: block;
+	padding: 4.4px;
+	margin: 5px 0;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #000;
+}
