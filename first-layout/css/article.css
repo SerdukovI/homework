@@ -59,12 +59,12 @@ p {
 
 .list {
 	margin-bottom: 80px;
-	padding-left: 0;
+	padding-left: 15px;
 }
 
 .list-little {
 	padding: 12px;
-	margin-bottom: 0;
+	margin-bottom: 12px;
 }
 
 .article-video {
