@@ -1,0 +1,156 @@
+* {
+	font-family: "Ubuntu", "Oswald", sans-serif;
+}
+
+body {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url(../images/back.png) no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.form {
+	padding: 10px 15px;
+	max-width: 370px;
+	width: 100%;
+	border: 1px solid #000;
+	border-radius: 8px;
+}
+
+.fieldset {
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+.legend {
+	font-family: "Oswald";
+	font-weight: 500;
+	font-size: 19px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.label,
+.label-lower,
+.input,
+.textarea {
+	font-family: "Ubuntu";
+	font-weight: 400;
+	display: block;
+}
+
+.input {
+	padding: 6px 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	max-width: 300px;
+	width: 100%;
+}
+
+.input:hover,
+.textarea:hover {
+	outline-offset: 1px;
+	outline: 2px solid #c797eb;
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.button:focus-visible,
+.checkbox:focus-visible::after {
+	outline: 2px solid #1e99ff;
+	outline-offset: 1px;
+}
+
+.fieldset-lower {
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+.textarea {
+	border-radius: 8px;
+	resize: vertical;
+	min-height: 50px;
+	max-height: 100px;
+	max-width: 317px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.checkbox-label {
+	margin-bottom: 10px;
+	margin-left: 22px;
+}
+
+.checkbox {
+	appearance: none;
+	position: absolute;
+	outline: none;
+	cursor: pointer;
+}
+
+.checkbox::after {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin-left: -22px;
+	border: 1px solid #494566;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.checkbox:checked::after {
+	background: url(../images/check-icon.svg) no-repeat center;
+	background-color: #644a4a;
+}
+
+.checkbox:disabled::after {
+	opacity: 0.1;
+}
+
+.button {
+	padding: 5px;
+	max-width: 150px;
+	width: 100%;
+	border-radius: 8px;
+	border: none;
+	background-color: #f0ecfc;
+	line-height: 30px;
+	transition:
+		background-color 0.2s,
+		border 0.2s,
+		transform 0.2s;
+	align-self: center;
+	cursor: pointer;
+}
+
+.button span {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.button:hover {
+	background-color: transparent;
+	border: 1px solid #9faeb9;
+	transform: scale(1.1);
+}
+
+.span-button {
+	transition: font-size 0.4s;
+}
+
+.span-button:hover {
+	font-size: 20px;
+}
+
+.input:disabled::after .button:disabled::after,
+.checkbox:disabled::after {
+	opacity: 0, 1;
+}

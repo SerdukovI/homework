@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles/fonts.css" />
+		<link
+			rel="shortcut icon"
+			href="./images/favicon-star-image.png"
+			type="image/png"
+		/>
+		<link
+			rel="shortcut icon"
+			href="./images/favicon-star-image.svg"
+			type="image/svg"
+		/>
+		<link rel="stylesheet" href="./styles/normalize.css" />
+		<link rel="stylesheet" href="./styles/form.css" />
+	</head>
+	<body>
+		<form class="form">
+			<fieldset class="fieldset">
+				<legend class="legend">Ваши личные данные</legend>
+				<label class="label">
+					<span>Ваше Имя</span>
+					<input
+						type="text"
+						class="input"
+						required
+						name="name"
+						placeholder="Имя"
+					/>
+				</label>
+				<span>Ваш возраст</span>
+				<label class="label">
+					<input
+						type="number"
+						class="input"
+						required
+						name="age"
+						placeholder="Возраст"
+					/>
+				</label>
+				<span>Ваш номер телефона</span>
+				<label class="label">
+					<input
+						type="tel"
+						class="input"
+						required
+						name="telephone"
+						placeholder="Телефон"
+						inputmode="tel"
+					/>
+				</label>
+				<span>Ваша почта</span>
+				<label class="label">
+					<input
+						type="email"
+						class="input"
+						required
+						name="email"
+						placeholder="Почта"
+						inputmode="email"
+					/>
+				</label>
+			</fieldset>
+			<fieldset class="fieldset-lower">
+				<label class="label">
+					<span>Сообщение</span>
+					<textarea
+						class="textarea"
+						name="text"
+						id="text"
+						placeholder="Ваше сообщение"
+						required
+					>
+					</textarea>
+				</label>
+				<label class="label checkbox-label">
+					<input class="checkbox" type="checkbox" required name="accept" />
+					<span>Я принимаю правила</span>
+				</label>
+				<button class="button">
+					<span class="span-button">Отправить</span>
+				</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
