@@ -1,0 +1,64 @@
+html {
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 h2 h3 h4 h5 h6,
+p {
+	margin: 0;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.text {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #535755;
+}
+
+.button:hover {
+	opacity: 0.75;
+}
+
+.section {
+	margin-bottom: 140px;
+}
+
+.text-sub {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #858e8a;
+}
+
+.title-large {
+	max-width: 596px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+	margin: 0;
+	margin-bottom: 40px;
+}
