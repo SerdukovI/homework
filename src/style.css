@@ -155,7 +155,8 @@ body.overflow {
 .content__list-item  {
     cursor: pointer;
     padding: 12px 18px;
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
