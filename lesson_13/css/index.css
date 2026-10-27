@@ -26,13 +26,13 @@ body {
 }
 
 .aside {
-	height: 1000px;
+	height: 1100px;
 	background-color: #ffff00;
 	grid-column: 3 span;
 }
 
 .main {
-	height: 1000px;
+	height: 1100px;
 	background-color: #008000;
 	grid-column: 9 span;
 }
@@ -46,11 +46,12 @@ body {
 
 .article {
 	max-width: 310px;
+	height: 284px;
 	background-color: #ff0000;
 }
 
 .footer {
-	min-height: 100px;
+	min-height: 200px;
 	background-color: #0000ff;
 	grid-column: 12 span;
 	grid-row-start: span;
