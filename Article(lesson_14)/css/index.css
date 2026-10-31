@@ -182,7 +182,7 @@
 	user-select: none;
 }
 
-.faq__summary ::after {
+summary::after {
 	content: "";
 	display: inline-block;
 	width: 15px;
