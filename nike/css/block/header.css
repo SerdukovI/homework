@@ -44,9 +44,9 @@
 		opacity: 0;
 		visibility: hidden;
 		transition:
-			right var(--transition--time),
-			opacity var(--transition--time),
-			visibility var(--transition--time);
+			right var(--transition-time),
+			opacity var(--transition-time),
+			visibility var(--transition-time);
 	}
 
 	.header__menu--open {
