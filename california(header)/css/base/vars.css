@@ -1,0 +1,25 @@
+:root {
+	/* font-family */
+	--font-family-Inter: "Inter", sans-serif;
+	--font-family-Readex: "Readex", sans-serif;
+
+	/* color */
+	--text-color: #000;
+	--secondary-color: #070847;
+	--bg-color: #fff;
+	--bg-color-menu: #e4dcdc;
+	--hover-color: #8a865b;
+
+	/* container */
+	--container-width: 1440px;
+	--container-padding: 15px;
+
+	/* transitions */
+	--transition-time: 0.3s;
+
+	/* layers */
+	--layer-negative: -1;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+}

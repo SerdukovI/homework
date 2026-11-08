@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<script src="./js/index.js" type="module"></script>
+		<title>Mobile phones and gadgets</title>
+	</head>
+	<body class="page__body">
+		<header class="header">
+			<div class="container header__container">
+				<a href="#" class="logo header__logo-link">
+					<svg width="170" height="21" stroke="currentColor">
+						<use class="header__logo" href="./icon/sprite.svg#logo"></use>
+					</svg>
+				</a>
+				<nav
+					class="menu header__menu"
+					id="header__menu"
+					aria-label="Главное меню"
+				>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#all_products" class="menu__link">all products</a>
+						</li>
+						<div class="header__menu-container">
+							<span class="menu__link menu__item-block">solutions</span>
+							<svg width="12" height="8" stroke="currentColor">
+								<use href="./icon/sprite.svg#arrow-down"></use>
+							</svg>
+						</div>
+						<li class="menu__item">
+							<a href="#about" class="menu__link">about</a>
+						</li>
+						<li class="menu__item">
+							<a href="#support" class="menu__link">support</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<button
+						class="header__actions-button"
+						aria-label="Поиск"
+						title="Поиск"
+					>
+						<svg width="24" height="24">
+							<use
+								class="header__actions-icon"
+								href="./icon/sprite.svg#search"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__actions-button"
+						aria-label="Корзина"
+						title="Корзина"
+					>
+						<svg width="40" height="24">
+							<use
+								class="header__actions-icon"
+								href="./icon/sprite.svg#card"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__actions-button header__burger burger"
+						aria-label="Открыть меню"
+						aria-expanded="false"
+						aria-controls="header__menu"
+					>
+						<svg width="40" height="24">
+							<use
+								class="burger__icon-menu"
+								href="./icon/sprite.svg#menu-burger"
+							></use>
+							<use
+								class="burger__icon-cross"
+								href="./icon/sprite.svg#menu-cross"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+	</body>
+</html>
