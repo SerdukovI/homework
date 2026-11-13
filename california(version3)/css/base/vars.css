@@ -1,0 +1,32 @@
+:root {
+	/* font-family */
+	--font-family-Inter: "Inter", sans-serif;
+	--font-family-Readex: "Readex", sans-serif;
+
+	/* color */
+	--text-color: #000;
+	--secondary-color: #070847;
+	--bg-color: #fff;
+	--bg-color-menu: #f0e9e9;
+	--hover-color: #8a865b;
+	--bg-hover-color: #adaa81;
+	--shadow-hover-color: #8a865b4d;
+
+	/* shadow */
+	--shadow-glow: 0 0 6px 2px var(--shadow-hover-color);
+
+	/* container */
+	--container-width: 1440px;
+	--container-padding: 15px;
+
+	/* transitions */
+	--transition-time: 0.3s;
+
+	/* layers */
+	--layer-negative-2: -2;
+	--layer-negative-1: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+}

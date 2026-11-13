@@ -1,0 +1,28 @@
+.page {
+	color: var(--text-color);
+}
+
+.page__body {
+	min-width: 375px;
+}
+
+.container {
+	margin-inline: auto;
+	width: min(var(--container-width), 100% - var(--container-padding) * 2);
+	min-height: 80px;
+}
+
+.logo {
+	color: var(--text-color);
+}
+
+.text-style {
+	font-weight: 400;
+	color: var(--text-color);
+}
+
+a:focus-visible,
+button:focus-visible {
+	outline: 2px solid var(--hover-color);
+	outline-offset: 2px;
+}

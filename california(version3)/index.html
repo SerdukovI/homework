@@ -1,0 +1,319 @@
+<!doctype html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+			defer
+		></script>
+		<script src="./js/index.js" type="module"></script>
+		<title>Mobile phones and gadgets</title>
+	</head>
+	<body class="page__body">
+		<header class="header">
+			<div class="container header__container">
+				<a href="#" class="logo header__logo-link">
+					<svg width="170" height="21" stroke="currentColor">
+						<use class="header__logo" href="./icon/sprite.svg#logo"></use>
+					</svg>
+				</a>
+				<nav
+					class="menu header__menu"
+					id="header__menu"
+					aria-label="Главное меню"
+				>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#all_products" class="menu__link">all products</a>
+						</li>
+						<li class="menu__item header__menu-container">
+							<span class="menu__link menu__item-block">solutions</span>
+							<svg width="12" height="8" stroke="currentColor">
+								<use href="./icon/sprite.svg#arrow-down"></use>
+							</svg>
+						</li>
+						<li class="menu__item">
+							<a href="#about" class="menu__link">about</a>
+						</li>
+						<li class="menu__item">
+							<a href="#support" class="menu__link">support</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<button
+						class="header__actions-button"
+						aria-label="Поиск"
+						title="Поиск"
+					>
+						<svg width="24" height="24">
+							<use
+								class="header__actions-icon"
+								href="./icon/sprite.svg#search"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__actions-button"
+						aria-label="Корзина"
+						title="Корзина"
+					>
+						<svg width="40" height="24">
+							<use
+								class="header__actions-icon"
+								href="./icon/sprite.svg#card"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__actions-button header__burger burger"
+						aria-label="Открыть меню"
+						aria-expanded="false"
+						aria-controls="header__menu"
+					>
+						<svg width="40" height="24">
+							<use
+								class="burger__icon-menu"
+								href="./icon/sprite.svg#menu-burger"
+							></use>
+							<use
+								class="burger__icon-cross"
+								href="./icon/sprite.svg#menu-cross"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+					<section class="banner">
+						<div class="banner__slider-wrapper">
+							<button
+								class="banner__slider-button banner__slider-button--prev"
+								aria-label="Предыдущий слайд"
+							>
+								<svg>
+									<use
+										class="banner-slider-button-icon"
+										href="./icon/banner-sprite.svg#arrow-right"
+										stroke="currentColor"
+									></use>
+								</svg>
+							</button>
+							<div class="swiper banner__slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="banner__slide-inner">
+											<div class="banner__slide-inner-left">
+												<h2
+													class="banner__text-slide-header text-style"
+													lang="en"
+												>
+													The new phones are here take a look.
+												</h2>
+												<p class="banner__text-slide text-style" lang="en">
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Scelerisque in est dui, aliquam, tempor.
+													Faucibus morbi turpis.
+												</p>
+												<button class="banner-slide-button" lang="en">
+													Explore
+												</button>
+											</div>
+											<div class="banner__slide-inner-right">
+												<picture>
+													<source
+														srcset="./images/banner-slides/slide-1-img.webp"
+													/>
+													<img
+														src="./images/banner-slides/slide-1-img.png"
+														class="banner__slide-img"
+														width="647"
+														height="550"
+														alt="Три телефона от Apple"
+													/>
+												</picture>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="banner__slide-inner">
+											<div class="banner__slide-inner-left">
+												<h2
+													class="banner__text-slide-header text-style"
+													lang="en"
+												>
+													The new phones are here take a look.
+												</h2>
+												<p class="banner__text-slide text-style" lang="en">
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Scelerisque in est dui, aliquam, tempor.
+													Faucibus morbi turpis.
+												</p>
+												<button class="banner-slide-button" lang="en">
+													Explore
+												</button>
+											</div>
+											<div class="banner__slide-inner-right">
+												<picture>
+													<source
+														srcset="./images/banner-slides/slide-1-img.webp"
+													/>
+													<img
+														src="./images/banner-slides/slide-1-img.png"
+														class="banner__slide-img"
+														width="647"
+														height="550"
+														alt="Три телефона от Apple"
+													/>
+												</picture>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="banner__slide-inner">
+											<div class="banner__slide-inner-left">
+												<h2
+													class="banner__text-slide-header text-style"
+													lang="en"
+												>
+													The new phones are here take a look.
+												</h2>
+												<p class="banner__text-slide text-style" lang="en">
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Scelerisque in est dui, aliquam, tempor.
+													Faucibus morbi turpis.
+												</p>
+												<button class="banner-slide-button" lang="en">
+													Explore
+												</button>
+											</div>
+											<div class="banner__slide-inner-right">
+												<picture>
+													<source
+														srcset="./images/banner-slides/slide-1-img.webp"
+													/>
+													<img
+														src="./images/banner-slides/slide-1-img.png"
+														class="banner__slide-img"
+														width="647"
+														height="550"
+														alt="Три телефона от Apple"
+													/>
+												</picture>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button
+								class="banner__slider-button banner__slider-button--next"
+								aria-label="Следующий слайд"
+							>
+								<svg>
+									<use
+										class="banner-slider-button-icon"
+										href="./icon/banner-sprite.svg#arrow-right"
+										stroke="currentColor"
+									></use>
+								</svg>
+							</button>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="categories">
+				<div class="container">
+					<header class="categories__header">
+						<h2 class="categories__header-text text-style" lang="en">
+							Shop our latest offers and categories
+						</h2>
+						<p class="categories__text text-style" lang="en">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</header>
+					<section class="catalog">
+						<div class="catalog__card catalog__card--laptops">
+							<div class="catalog__image-wrapper">
+								<img
+									class="catalog__img"
+									width="500"
+									height="377"
+									src="./images/laptops-img.webp"
+									alt="Ноутбук"
+								/>
+							</div>
+							<div class="catalog__text-wrapper">
+								<span class="catalog__category text-style" lang="en">
+									Laptops
+								</span>
+								<h3 class="catalog__title" lang="en">True Laptop Solution</h3>
+							</div>
+						</div>
+						<div class="catalog__card catalog__card--phone">
+							<div class="catalog__image-wrapper">
+								<img
+									class="catalog__img"
+									width="405"
+									height="367"
+									src="./images/phones-img.webp"
+									alt="Два телефона"
+								/>
+							</div>
+							<div class="catalog__text-wrapper">
+								<span class="catalog__category text-style" lang="en">
+									Phones
+								</span>
+								<h3 class="catalog__title" lang="en">Your day to day life</h3>
+							</div>
+						</div>
+						<div class="catalog__card catalog__card--tablet">
+							<div class="catalog__text-wrapper">
+								<span class="catalog__category text-style" lang="en">
+									Tablet
+								</span>
+								<h3 class="catalog__title" lang="en">Empower your work</h3>
+							</div>
+							<div class="catalog__image-wrapper">
+								<img
+									class="catalog__img"
+									width="467"
+									height="425"
+									src="./images/tablet-img.webp"
+									alt="Рука, которая держит планшет"
+								/>
+							</div>
+						</div>
+						<div class="catalog__card catalog__card--watch">
+							<div class="catalog__image-wrapper">
+								<img
+									class="catalog__img"
+									width="381"
+									height="270"
+									src="./images/watch-img.webp"
+									alt="Два телефона"
+								/>
+							</div>
+							<div class="catalog__text-wrapper">
+								<span class="catalog__category text-style" lang="en">
+									Watch
+								</span>
+								<h3 class="catalog__title" lang="en">Not just stylisht</h3>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,347 @@
+.catalog {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-auto-rows: 267px;
+	gap: 16px;
+	width: min(var(--container-width), 100% - var(--container-padding) * 2);
+	margin: 0 auto;
+}
+
+.catalog__card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+	min-width: 312px;
+	transition: border-radius var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.catalog__card:hover {
+		border-radius: 100px;
+		box-shadow: var(--shadow-glow);
+	}
+}
+
+.catalog__text-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding-inline: 10px;
+}
+
+.catalog__category {
+	font-family: var(--font-family-Inter);
+	line-height: 128%;
+}
+
+.catalog__title {
+	font-family: var(--font-family-Inter);
+	line-height: 120%;
+}
+
+@media (width > 1440px) {
+	.catalog__category {
+		font-size: 15px;
+	}
+
+	.catalog__title {
+		font-size: 32px;
+	}
+}
+
+@media (width <= 1440px) {
+	.catalog__category {
+		font-size: 10px;
+	}
+
+	.catalog__title {
+		font-size: 22px;
+	}
+}
+
+.catalog__card--laptops .catalog__title,
+.catalog__card--watch .catalog__title {
+	max-width: 200px;
+}
+
+.catalog__card--laptops .catalog__text-wrapper {
+	align-items: end;
+}
+
+.catalog__card--watch .catalog__text-wrapper {
+	text-align: end;
+}
+
+.catalog__card--phone .catalog__text-wrapper,
+.catalog__card--tablet .catalog__text-wrapper {
+	text-align: center;
+}
+
+.catalog__card--laptops {
+	grid-column: 1/6;
+	grid-row: 1/2;
+}
+
+.catalog__card--phone {
+	grid-column: 6/9;
+	grid-row: 1/3;
+}
+
+.catalog__card--phone .catalog__image-wrapper {
+	position: absolute;
+	top: 20%;
+	left: 8%;
+}
+
+.catalog__card--phone .catalog__text-wrapper {
+	position: absolute;
+	top: 75%;
+	left: 3%;
+}
+
+.catalog__card--tablet {
+	grid-column: 9/12;
+	grid-row: 1/3;
+}
+
+.catalog__card--tablet .catalog__image-wrapper {
+	position: absolute;
+	top: 35%;
+	left: 1;
+}
+
+.catalog__card--tablet .catalog__text-wrapper {
+	position: absolute;
+	top: 20%;
+	left: 2%;
+}
+
+.catalog__card--watch {
+	grid-column: 1/6;
+	grid-row: 2/3;
+}
+
+.catalog__card--watch .catalog__image-wrapper {
+	position: absolute;
+	top: -1%;
+	left: 1;
+}
+
+.catalog__card--watch .catalog__text-wrapper {
+	position: absolute;
+	top: 40%;
+	right: 4%;
+}
+
+@media (width <= 1440px) {
+	.catalog {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 300px);
+	}
+
+	.catalog__card--laptops .catalog__img {
+		width: 70%;
+	}
+
+	.catalog__card--watch .catalog__img {
+		transform: scale(1.2);
+	}
+
+	.catalog__card--laptops .catalog__title {
+		margin-bottom: 10px;
+		max-width: 300px;
+	}
+
+	.catalog__card--phone .catalog__text-wrapper,
+	.catalog__card--tablet .catalog__text-wrapper {
+		text-align: start;
+	}
+
+	.catalog__card--laptops {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.catalog__card--phone {
+		grid-column: 2/2;
+		grid-row: 1/2;
+	}
+
+	.catalog__card--tablet {
+		grid-column: 2/2;
+		grid-row: 2/2;
+	}
+
+	.catalog__card--watch {
+		grid-column: 1/2;
+		grid-row: 2/2;
+	}
+
+	.catalog__card--laptops .catalog__text-wrapper {
+		position: absolute;
+		top: 78.5%;
+		right: -1px;
+	}
+
+	.catalog__card--phone .catalog__image-wrapper {
+		position: absolute;
+		top: 1%;
+		left: 50%;
+		width: 50%;
+	}
+
+	.catalog__card--phone .catalog__text-wrapper {
+		position: absolute;
+		top: 78.5%;
+		left: -1px;
+	}
+	.catalog__card--tablet .catalog__image-wrapper {
+		position: absolute;
+		top: 5%;
+		right: 1px;
+		width: 50%;
+	}
+
+	.catalog__card--tablet .catalog__text-wrapper {
+		position: absolute;
+		top: 5.5%;
+		left: 1%;
+	}
+
+	.catalog__card--watch .catalog__image-wrapper {
+		position: absolute;
+		top: 1%;
+		left: 1;
+	}
+
+	.catalog__card--watch .catalog__text-wrapper {
+		position: absolute;
+		top: 5.5%;
+		right: 1%;
+	}
+}
+
+@media (width <= 992px) {
+	.catalog {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: auto;
+	}
+
+	.catalog__card {
+		min-height: 267px;
+	}
+
+	.catalog__card--laptops .catalog__img {
+		width: 50%;
+	}
+
+	.catalog__card--watch .catalog__text-wrapper {
+		text-align: start;
+	}
+
+	.catalog__card--watch .catalog__img {
+		transform: scale(1.2);
+	}
+
+	.catalog__card--laptops .catalog__title {
+		margin-bottom: 10px;
+	}
+
+	.catalog__card--phone .catalog__text-wrapper {
+		text-align: start;
+	}
+
+	.catalog__card--tablet .catalog__text-wrapper {
+		text-align: end;
+	}
+
+	.catalog__card--laptops,
+	.catalog__card--watch,
+	.catalog__card--phone,
+	.catalog__card--tablet {
+		grid-column: 1 / -1;
+		grid-row: auto;
+	}
+
+	.catalog__card--laptops .catalog__text-wrapper {
+		position: absolute;
+		top: 68.5%;
+		right: 1%;
+	}
+
+	.catalog__card--phone .catalog__image-wrapper {
+		position: absolute;
+		top: 1%;
+		left: 70%;
+		width: 30%;
+	}
+
+	.catalog__card--phone .catalog__text-wrapper {
+		position: absolute;
+		top: 75.5%;
+		left: -1px;
+	}
+
+	.catalog__card--tablet .catalog__image-wrapper {
+		position: absolute;
+		top: 5%;
+		left: 1px;
+		width: 30%;
+	}
+
+	.catalog__card--tablet .catalog__text-wrapper {
+		position: absolute;
+		top: 5.5%;
+		left: 70%;
+	}
+
+	.catalog__card--watch .catalog__image-wrapper {
+		position: absolute;
+		top: 1%;
+		left: 50%;
+		min-width: 350px;
+	}
+
+	.catalog__card--watch .catalog__text-wrapper {
+		position: absolute;
+		top: 5.5%;
+		left: 1px;
+		min-width: 200px;
+	}
+}
+
+@media (width <= 576px) {
+	.catalog__category {
+		font-size: 8px;
+	}
+
+	.catalog__title {
+		font-size: 14px;
+	}
+	.catalog__card--laptops .catalog__img {
+		min-width: 253px;
+	}
+
+	.catalog__card--phone .catalog__image-wrapper {
+		min-width: 250px;
+		top: 5%;
+		left: 55%;
+	}
+
+	.catalog__card--tablet .catalog__image-wrapper {
+		min-width: 200px;
+	}
+
+	.catalog__card--watch .catalog__image-wrapper {
+		top: 10%;
+		left: 40%;
+		min-width: 100px;
+	}
+
+	.catalog__card--tablet .catalog__text-wrapper {
+		left: 65%;
+	}
+}
