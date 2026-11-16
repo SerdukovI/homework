@@ -1,0 +1,542 @@
+<!doctype html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+			defer
+		></script>
+		<script src="./js/index.js" type="module"></script>
+		<title>Mobile phones and gadgets</title>
+	</head>
+	<body class="page__body">
+		<header class="header">
+			<div class="container header__container">
+				<a href="#" class="logo header__logo-link">
+					<svg width="170" height="21" stroke="currentColor">
+						<use class="header__logo" href="./icon/sprite.svg#logo"></use>
+					</svg>
+				</a>
+				<nav
+					class="menu header__menu"
+					id="header__menu"
+					aria-label="Главное меню"
+				>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#all_products" class="menu__link">all products</a>
+						</li>
+						<li class="menu__item header__menu-container">
+							<span class="menu__link menu__item-block">solutions</span>
+							<svg width="12" height="8" stroke="currentColor">
+								<use href="./icon/sprite.svg#arrow-down"></use>
+							</svg>
+						</li>
+						<li class="menu__item">
+							<a href="#about" class="menu__link">about</a>
+						</li>
+						<li class="menu__item">
+							<a href="#support" class="menu__link">support</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<button
+						class="header__actions-button"
+						aria-label="Поиск"
+						title="Поиск"
+					>
+						<svg width="24" height="24">
+							<use
+								class="header__actions-icon"
+								href="./icon/sprite.svg#search"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__actions-button"
+						aria-label="Корзина"
+						title="Корзина"
+					>
+						<svg width="40" height="24">
+							<use
+								class="header__actions-icon"
+								href="./icon/sprite.svg#card"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__actions-button header__burger burger"
+						aria-label="Открыть меню"
+						aria-expanded="false"
+						aria-controls="header__menu"
+					>
+						<svg width="40" height="24">
+							<use
+								class="burger__icon-menu"
+								href="./icon/sprite.svg#menu-burger"
+							></use>
+							<use
+								class="burger__icon-cross"
+								href="./icon/sprite.svg#menu-cross"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero section">
+				<div class="container">
+					<section class="banner">
+						<div class="banner__slider-wrapper">
+							<button
+								class="banner__slider-button banner__slider-button--prev"
+								aria-label="Предыдущий слайд"
+							>
+								<svg>
+									<use
+										class="banner-slider-button-icon"
+										href="./icon/banner-sprite.svg#arrow-right"
+										stroke="currentColor"
+									></use>
+								</svg>
+							</button>
+							<div class="swiper banner__slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="banner__slide-inner">
+											<div class="banner__slide-inner-left">
+												<h1
+													class="banner__text-slide-header text-style"
+													lang="en"
+												>
+													The new phones are here take a look.
+												</h1>
+												<p class="banner__text-slide text-style" lang="en">
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Scelerisque in est dui, aliquam, tempor.
+													Faucibus morbi turpis.
+												</p>
+												<button class="banner-slide-button" lang="en">
+													Explore
+												</button>
+											</div>
+											<div class="banner__slide-inner-right">
+												<picture>
+													<source
+														srcset="./images/banner-slides/slide-1-img.webp"
+														type="image/webp"
+													/>
+													<img
+														src="./images/banner-slides/slide-1-img.png"
+														class="banner__slide-img"
+														width="647"
+														height="550"
+														alt="Три телефона от Apple"
+														fetchpriority="high"
+														loading="eager"
+													/>
+												</picture>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="banner__slide-inner">
+											<div class="banner__slide-inner-left">
+												<h2
+													class="banner__text-slide-header text-style"
+													lang="en"
+												>
+													The new phones are here take a look.
+												</h2>
+												<p class="banner__text-slide text-style" lang="en">
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Scelerisque in est dui, aliquam, tempor.
+													Faucibus morbi turpis.
+												</p>
+												<button class="banner-slide-button" lang="en">
+													Explore
+												</button>
+											</div>
+											<div class="banner__slide-inner-right">
+												<picture>
+													<source
+														srcset="./images/banner-slides/slide-1-img.webp"
+													/>
+													<img
+														src="./images/banner-slides/slide-1-img.png"
+														class="banner__slide-img"
+														width="647"
+														height="550"
+														alt="Три телефона от Apple"
+													/>
+												</picture>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="banner__slide-inner">
+											<div class="banner__slide-inner-left">
+												<h2
+													class="banner__text-slide-header text-style"
+													lang="en"
+												>
+													The new phones are here take a look.
+												</h2>
+												<p class="banner__text-slide text-style" lang="en">
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Scelerisque in est dui, aliquam, tempor.
+													Faucibus morbi turpis.
+												</p>
+												<button class="banner-slide-button" lang="en">
+													Explore
+												</button>
+											</div>
+											<div class="banner__slide-inner-right">
+												<picture>
+													<source
+														srcset="./images/banner-slides/slide-1-img.webp"
+													/>
+													<img
+														src="./images/banner-slides/slide-1-img.png"
+														class="banner__slide-img"
+														width="647"
+														height="550"
+														alt="Три телефона от Apple"
+													/>
+												</picture>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button
+								class="banner__slider-button banner__slider-button--next"
+								aria-label="Следующий слайд"
+							>
+								<svg>
+									<use
+										class="banner-slider-button-icon"
+										href="./icon/banner-sprite.svg#arrow-right"
+										stroke="currentColor"
+									></use>
+								</svg>
+							</button>
+						</div>
+					</section>
+				</div>
+			</section>
+			<section class="categories section">
+				<div class="container">
+					<header class="categories__header">
+						<h2 class="title-h2" lang="en">
+							Shop our latest offers and categories
+						</h2>
+						<p class="categories__text text-style" lang="en">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</header>
+					<section class="catalog">
+						<article class="catalog__card catalog__card--laptop">
+							<div class="catalog__image-wrapper">
+								<picture>
+									<source
+										srcset="./images/catalog/laptop-img.webp"
+										type="image/webp"
+									/>
+									<img
+										class="catalog__img"
+										width="500"
+										height="377"
+										src="./images/catalog/laptop-img.png"
+										alt="Ноутбук"
+										loading="lazy"
+									/>
+								</picture>
+							</div>
+							<div class="catalog__text-wrapper">
+								<span class="catalog__category text-style" lang="en">
+									Laptops
+								</span>
+								<h3 class="catalog__title" lang="en">True Laptop Solution</h3>
+							</div>
+						</article>
+						<article class="catalog__card catalog__card--phone">
+							<div class="catalog__image-wrapper">
+								<picture>
+									<source
+										srcset="./images/catalog/phone-img.webp"
+										type="image/webp"
+									/>
+									<img
+										class="catalog__img"
+										width="500"
+										height="377"
+										src="./images/catalog/phone-img.png"
+										alt="Два телефона"
+										loading="lazy"
+									/>
+								</picture>
+							</div>
+							<div class="catalog__text-wrapper">
+								<span class="catalog__category text-style" lang="en">
+									Phones
+								</span>
+								<h3 class="catalog__title" lang="en">Your day to day life</h3>
+							</div>
+						</article>
+						<article class="catalog__card catalog__card--tablet">
+							<div class="catalog__text-wrapper">
+								<span class="catalog__category text-style" lang="en">
+									Tablet
+								</span>
+								<h3 class="catalog__title" lang="en">Empower your work</h3>
+							</div>
+							<div class="catalog__image-wrapper">
+								<picture>
+									<source
+										srcset="./images/catalog/tablet-img.webp"
+										type="image/webp"
+									/>
+									<img
+										class="catalog__img"
+										width="500"
+										height="377"
+										src="./images/catalog/tablet-img.png"
+										alt="Рука, которая держит планшет"
+										loading="lazy"
+									/>
+								</picture>
+							</div>
+						</article>
+						<article class="catalog__card catalog__card--watch">
+							<div class="catalog__image-wrapper">
+								<picture>
+									<source
+										srcset="./images/catalog/watch-img.webp"
+										type="image/webp"
+									/>
+									<img
+										class="catalog__img"
+										width="500"
+										height="377"
+										src="./images/catalog/watch-img.png"
+										alt="Часы"
+										loading="lazy"
+									/>
+								</picture>
+							</div>
+							<div class="catalog__text-wrapper">
+								<span class="catalog__category text-style" lang="en">
+									Watch
+								</span>
+								<h3 class="catalog__title" lang="en">Not just stylisht</h3>
+							</div>
+						</article>
+					</section>
+				</div>
+			</section>
+			<section class="section bestsellers">
+				<div class="container bestsellers__block">
+					<header class="bestsellers__header">
+						<h2 class="title-h2" lang="en">Save on our most selled items.</h2>
+						<p class="bestsellers__text text-style">
+							Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+						</p>
+					</header>
+					<div class="bestsellers__list">
+						<article class="article-card">
+							<div class="arcticle-card__image-wrapper">
+								<picture>
+									<source
+										srcset="./images/bestsellers/macbook-img.webp"
+										type="image/webp"
+									/>
+									<img
+										src="./images/bestsellers/macbook-img.png"
+										class="arcticle-card__img"
+										alt="Ноутбук Масbook Pro 13"
+										width="247"
+										height="214"
+										loading="lazy"
+									/>
+								</picture>
+							</div>
+							<div class="article-card__content">
+								<h3 class="article-card__title">MacBook Pro 13</h3>
+								<p class="article-card__text">
+									Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+								</p>
+								<span class="article-card__price">$ 1,200.00 USD</span>
+							</div>
+						</article>
+						<article class="article-card">
+							<div class="arcticle-card__image-wrapper">
+								<picture>
+									<source
+										srcset="./images/bestsellers/watch-img.webp"
+										type="image/webp"
+									/>
+									<img
+										src="./images/bestsellers/watch-img.png"
+										class="arcticle-card__img"
+										alt="Часы Smart Galaxy Watch 3"
+										width="247"
+										height="214"
+										loading="lazy"
+									/>
+								</picture>
+							</div>
+							<div class="article-card__content">
+								<h3 class="article-card__title">Smart Galaxy Watch 3</h3>
+								<p class="article-card__text">
+									Neque porro quisquam est qui dolorem ipsum quia dolor sit
+									amet, consectetur, adipisci velit...
+								</p>
+								<span class="article-card__price">$ 199.00 USD</span>
+							</div>
+						</article>
+						<article class="article-card">
+							<div class="arcticle-card__image-wrapper">
+								<picture>
+									<source
+										srcset="./images/bestsellers/macbook-m1-img.webp"
+										type="image/webp"
+									/>
+									<img
+										src="./images/bestsellers/macbook-m1-img.png"
+										class="arcticle-card__img"
+										alt="Ноутбук MacBook Air M1"
+										width="247"
+										height="214"
+										loading="lazy"
+									/>
+								</picture>
+							</div>
+							<div class="article-card__content">
+								<h3 class="article-card__title">MacBook Air M1</h3>
+								<p class="article-card__text">
+									Neque porro quisquam est qui dolorem ipsum quia dolor sit
+									amet, consectetur, adipisci velit...
+								</p>
+								<span class="article-card__price">$ 1,009.00 USD</span>
+							</div>
+						</article>
+						<article class="article-card">
+							<div class="arcticle-card__image-wrapper">
+								<picture>
+									<source
+										srcset="./images/bestsellers/ipad.webp"
+										type="image/webp"
+									/>
+									<img
+										src="./images/bestsellers/ipad.png"
+										class="arcticle-card__img"
+										alt="Планшет iPad"
+										width="247"
+										height="214"
+										loading="lazy"
+									/>
+								</picture>
+							</div>
+							<div class="article-card__content">
+								<h3 class="article-card__title">iPad</h3>
+								<p class="article-card__text">
+									Neque porro quisquam est qui dolorem ipsum quia dolor sit
+									amet, consectetur, adipisci velit...
+								</p>
+								<span class="article-card__price">$ 610.00 USD</span>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="collections section">
+				<div class="container">
+					<header class="collections__header">
+						<h2 class="title-h2">See the best around here</h2>
+						<p class="collections__content text-style">
+							Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+						</p>
+					</header>
+					<div class="collections__cards">
+						<article class="collections__article-card">
+							<p class="collections__content">Smart light bulb pack</p>
+							<h3 class="collections__title-card text-style">
+								Latest and gratest
+							</h3>
+							<button class="collections__button-card text-style">
+								Explore
+							</button>
+							<picture>
+								<source
+									srcset="./images/collections/watch-img.webp"
+									type="image/webp"
+								/>
+								<img
+									class="collections__img"
+									src="./images/collections/watch-img.png"
+									alt="Двое часов"
+									width="259"
+									height="250"
+									loading="lazy"
+								/>
+							</picture>
+						</article>
+						<article class="collections__article-card">
+							<p class="collections__content">Smart light bulb pack</p>
+							<h3 class="collections__title-card text-style">Best selling</h3>
+							<button class="collections__button-card text-style">
+								Explore
+							</button>
+							<picture>
+								<source
+									srcset="./images/collections/gadget-img.webp"
+									type="image/webp"
+								/>
+								<img
+									class="collections__img"
+									src="./images/collections/gadget-img.png"
+									alt="Два телефона между ними часы и на заднем фоне ноутбук"
+									width="294"
+									height="250"
+									loading="lazy"
+								/>
+							</picture>
+						</article>
+						<article class="collections__article-card">
+							<p class="collections__content">Smart light bulb pack</p>
+							<h3 class="collections__title-card text-style">Every product</h3>
+							<button class="collections__button-card text-style">
+								Explore
+							</button>
+							<picture>
+								<source
+									srcset="./images/collections/phone-laptop-img.webp"
+									type="image/webp"
+								/>
+								<img
+									class="collections__img"
+									src="./images/collections/phone-laptop-img.png"
+									alt="Ноутбук и на заднем фоне телефон"
+									width="355"
+									height="250"
+									loading="lazy"
+								/>
+							</picture>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

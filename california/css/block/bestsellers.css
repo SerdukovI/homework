@@ -1,0 +1,19 @@
+.bestsellers__block {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.bestsellers__text {
+	margin-top: 9px;
+	margin-bottom: 31px;
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+}
+
+.bestsellers__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+	gap: 40px 20px;
+	min-height: 396px;
+}
