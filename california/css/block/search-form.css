@@ -1,0 +1,18 @@
+.search-form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 18px;
+}
+
+.search-form__icon {
+	width: 30px;
+	height: 29px;
+}
+
+.search-form__input {
+	border: 1px solid var(#c5c5c5);
+	border-radius: 100px;
+	min-width: 650px;
+	min-height: 60px;
+	background-color: var(--search-bg-color);
+}

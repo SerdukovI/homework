@@ -1,218 +1,289 @@
-.catalog {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(1, 1fr);
-	grid-auto-rows: 267px;
-	gap: 16px;
-	margin: 0 auto;
-}
+/* 
+rework the catalog */
 
-.catalog__card {
+.catalog {
 	display: flex;
-	border-radius: 20px;
-	overflow: hidden;
-	box-shadow: 0 4px 35px 0 var(--box-shadow-color);
-	background-color: var(--card-bg-color);
-	/* min-width: 312px; */
-	transition: border-radius var(--transition-time);
+	margin: 0 auto;
+	max-height: 792px;
+	gap: 33px;
 }
 
 @media (width > 1440px) {
-	.catalog__card {
-		flex-direction: column;
+	.catalog {
+		max-width: 1294px;
+		gap: 33px;
 	}
 }
 
 @media (width <= 1440px) {
-	.catalog__card {
-		flex-direction: row;
-		justify-content: space-between;
+	.catalog {
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
+		gap: 25px;
 	}
 }
 
-@media (any-hover: hover) {
-	.catalog__card:hover {
-		border-radius: 100px;
-		box-shadow: var(--shadow-glow);
-	}
-}
-
-.catalog__text-wrapper {
+.catalog__section-card--left {
 	display: flex;
-	flex-direction: column;
-	padding-inline: 10px;
-}
-
-.catalog__card--watch .catalog__text-wrapper {
-	justify-content: center;
-	align-items: start;
-}
-
-.catalog__category {
-	font-family: var(--font-family-Inter);
-	line-height: 128%;
-}
-
-.catalog__title {
-	font-family: var(--font-family-Inter);
-	line-height: 120%;
-}
-
-@media (width > 1024px) {
-	.catalog__title {
-		font-size: 32px;
-	}
-
-	.catalog__category {
-		font-size: 15px;
-	}
-}
-
-@media (width <= 1024px) {
-	.catalog__title {
-		font-size: 25px;
-	}
-
-	.catalog__category {
-		font-size: 12px;
-	}
-}
-
-.catalog__card--laptop {
-	grid-column: 1/6;
-	grid-row: 1/2;
-}
-
-.catalog__card--phone {
-	grid-column: 6/9;
-	grid-row: 1/3;
-}
-
-.catalog__card--tablet {
-	grid-column: 9/13;
-	grid-row: 1/3;
-}
-
-.catalog__card--watch {
-	grid-column: 1/6;
-	grid-row: 2/3;
-	display: flex;
-	flex-direction: row;
 }
 
 @media (width > 1440px) {
-	.catalog__card--phone {
+	.catalog__section-card--left {
 		display: flex;
-		justify-content: space-around;
-	}
-
-	.catalog__card--tablet {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.catalog__card--laptop .catalog__text-wrapper {
-		justify-content: center;
-		align-items: end;
-		padding-right: 50px;
-	}
-
-	.catalog__card--phone .catalog__text-wrapper {
-		padding-bottom: 160px;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.catalog__card--phone .catalog__image-wrapper {
-		padding-top: 160px;
-	}
-
-	.catalog__card--tablet .catalog__text-wrapper {
-		padding-top: 100px;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.catalog__card--tablet .catalog__image-wrapper {
-		padding-bottom: 120px;
+		flex-direction: column;
+		gap: 50px;
 	}
 }
 
-@media (width <= 1440px) and (width > 992px) {
-	.catalog {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 300px);
+@media (width <= 1440px) {
+	.catalog__section-card--left {
+		gap: 16px;
 	}
+}
 
-	.catalog__img {
-		max-width: 300px;
-		max-height: 250px;
+.catalog__section-card-right {
+	display: flex;
+	gap: 16px;
+}
+
+@media (width <= 1024px) {
+	.catalog__section-card--right {
+		display: flex;
+		flex-wrap: wrap;
 	}
+}
 
-	.catalog__card--watch .catalog__image-wrapper {
-		transform: rotate(90deg);
-	}
+.catalog__card {
+	display: flex;
+	flex-direction: column;
+	box-shadow: var(--shadow-glow);
+}
 
-	.catalog__card--laptop .catalog__title {
-		margin-bottom: 10px;
+@media (width > 1440px) {
+	.catalog__card--laptop,
+	.catalog__card--watch {
+		padding-inline: 42px;
+		max-width: 639px;
 	}
 
 	.catalog__card--laptop {
-		grid-column: 1/2;
-		grid-row: 1/2;
-	}
-
-	.catalog__card--phone {
-		grid-column: 2/2;
-		grid-row: 1/2;
-	}
-
-	.catalog__card--tablet {
-		grid-column: 2/2;
-		grid-row: 2/2;
+		max-height: 472px;
 	}
 
 	.catalog__card--watch {
-		grid-column: 1/2;
-		grid-row: 2/2;
+		flex-direction: row;
+		max-height: 270px;
+	}
+
+	.catalog__card--phone,
+	.catalog__card--tablet {
+		max-width: 312px;
+		max-height: 792px;
+	}
+
+	.catalog__card--phone {
+		padding-block: 144px;
+	}
+
+	.catalog__card--tablet {
+		padding-block: 116px;
 	}
 }
 
-@media (width <= 992px) {
-	.catalog {
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: auto;
-	}
-
+@media (width <= 1440px) {
 	.catalog__card--laptop,
 	.catalog__card--watch,
 	.catalog__card--phone,
 	.catalog__card--tablet {
-		grid-column: 1 / -1;
-		grid-row: auto;
-	}
-
-	.catalog__img {
-		max-width: 300px;
-		max-height: 250px;
+		padding-block: 20px;
+		padding-inline: 20px;
+		max-width: 500px;
+		max-height: 350px;
+		flex: 1 1 25%;
 	}
 }
 
-@media (width <= 576px) {
-	.catalog__title {
-		font-size: 18px;
+@media (width > 1440px) {
+	.catalog__card--laptop .catalog__image-wrapper {
+		min-width: 500px;
+		min-height: 377px;
 	}
 
-	.catalog__category {
-		font-size: 10px;
+	.catalog__card--watch .catalog__image-wrapper {
+		min-width: 381px;
+		min-height: 270px;
+		margin-bottom: 42px;
 	}
 
-	.catalog__img {
-		max-width: 200px;
+	.catalog__card--phone .catalog__image-wrapper {
+		min-width: 405px;
+		min-height: 367px;
 	}
 
-	.catalog__img .catalog__card--watch {
-		max-width: 100px;
+	.catalog__card--tablet .catalog__image-wrapper {
+		max-width: 467px;
+		max-height: 425px;
+	}
+
+	.catalog__card--laptop .catalog__img {
+		width: 80%;
+	}
+
+	.catalog__card--watch .catalog__img {
+		transform: rotate(90deg);
+		max-width: 70%;
+		max-height: 100%;
+	}
+
+	.catalog__card--phone .catalog__img {
+		max-width: 77%;
+		padding-bottom: 43px;
+	}
+
+	.catalog__card--tablet .catalog__img {
+		max-width: 100%;
+		padding-top: 42px;
+	}
+}
+
+@media (width <= 1440px) {
+	.catalog__card--laptop .catalog__image-wrapper,
+	.catalog__card--watch .catalog__image-wrapper,
+	.catalog__card--phone .catalog__image-wrapper,
+	.catalog__card--tablet .catalog__image-wrapper {
+		padding-inline: 42px;
+		min-width: 460px;
+		min-height: 250px;
+	}
+
+	.catalog__card--laptop .catalog__img {
+		max-width: 70%;
+	}
+
+	.catalog__card--watch .catalog__img {
+		transform: rotate(90deg);
+		max-width: 70%;
+		max-height: 90%;
+	}
+
+	.catalog__card--phone .catalog__img {
+		max-width: 67%;
+		padding-bottom: 20px;
+	}
+
+	.catalog__card--tablet .catalog__img {
+		max-width: 70%;
+		padding-top: 42px;
+	}
+}
+
+.catalog__text-wrapper {
+	font-weight: 400;
+	color: var(--text-color);
+}
+
+@media (width > 1440px) {
+	.catalog__card--laptop .catalog__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		min-width: 555px;
+	}
+
+	.catalog__card--watch .catalog__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-width: 175px;
+	}
+
+	.catalog__card--phone .catalog__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		max-width: 312px;
+	}
+
+	.catalog__card--tablet .catalog__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		max-width: 312px;
+	}
+}
+
+@media (width <= 1440px) {
+	.catalog__card--laptop .catalog__text-wrapper,
+	.catalog__card--watch .catalog__text-wrapper,
+	.catalog__card--phone .catalog__text-wrapper,
+	.catalog__card--tablet .catalog__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+	}
+}
+
+.catalog__category {
+	font-family: var(--font-family-Inter);
+	font-size: 15px;
+	line-height: 128%;
+	max-height: 20px;
+}
+
+.catalog__card--laptop .catalog__category {
+	text-align: right;
+}
+
+.catalog__card--watch .catalog__category {
+	text-align: center;
+}
+
+.catalog__card--phone .catalog__category {
+	text-align: center;
+}
+
+.catalog__card--tablet .catalog__category {
+	text-align: center;
+}
+
+.catalog__title {
+	font-family: var(--font-family-Readex);
+	font-size: 32px;
+	line-height: 120%;
+}
+
+.catalog__card--laptop .catalog__title {
+	text-align: end;
+}
+
+@media (width > 1440px) {
+	.catalog__card--laptop .catalog__title {
+		max-width: 192px;
+	}
+}
+
+.catalog__card--watch .catalog__title {
+	text-align: center;
+}
+
+.catalog__card--phone .catalog__title {
+	text-align: center;
+}
+
+@media (width > 1440px) {
+	.catalog__card--phone .catalog__title {
+		max-width: 250px;
+	}
+}
+
+.catalog__card--tablet .catalog__title {
+	text-align: center;
+}
+
+@media (width > 1440px) {
+	.catalog__card--tablet .catalog__title {
+		max-width: 233px;
 	}
 }

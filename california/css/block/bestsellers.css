@@ -1,4 +1,8 @@
-.bestsellers__block {
+/* .bestsellers {
+	display: none;
+} */
+
+.bestsellers__container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;

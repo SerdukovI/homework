@@ -1,0 +1,149 @@
+.ideas__container {
+	margin-inline: auto;
+	width: min(1350px, 100% - var(--container-padding) * 2);
+	min-height: 80px;
+}
+
+@media (width > 1024px) {
+	.ideas__header {
+		margin-bottom: 56px;
+	}
+}
+
+@media (width <= 1024px) {
+	.ideas__header {
+		margin-bottom: 26px;
+	}
+}
+
+.ideas__header-title {
+	font-family: var(--font-family-Readex);
+	font-weight: 400;
+	line-height: 125%;
+	text-align: center;
+	color: var(--text-color);
+	margin-bottom: 9px;
+}
+
+@media (width > 576px) {
+	.ideas__header-title {
+		font-size: 42px;
+	}
+}
+
+@media (width <= 576px) {
+	.ideas__header-title {
+		font-size: 40px;
+	}
+}
+
+.ideas__header-text {
+	font-family: var(--font-family-Readex);
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 129%;
+	text-align: center;
+	color: var(--text-color);
+}
+
+.ideas__content {
+	display: flex;
+}
+
+@media (width > 1024px) {
+	.ideas__content {
+		margin-bottom: 74px;
+	}
+}
+
+@media (width <= 1024px) {
+	.ideas__content {
+		margin-bottom: 44px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (width <= 1024px) {
+	.ideas__content {
+		flex-direction: column;
+	}
+}
+
+.ideas__image-wrapper {
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+@media (width > 1024px) {
+	.ideas__image-wrapper {
+		margin-right: 35px;
+	}
+}
+
+@media (width <= 1024px) and (width > 576px) {
+	.ideas__img {
+		max-width: 523px;
+	}
+}
+
+@media (width <= 576px) {
+	.ideas__img {
+		width: 100%;
+	}
+}
+
+.ideas__publications-text {
+	font-family: var(--font-family-Inter);
+	font-weight: 400;
+	line-height: 125%;
+	color: var(--text-color);
+	margin-top: 14px;
+	margin-bottom: 23px;
+}
+
+@media (width > 1024px) {
+	.ideas__publications-text {
+		max-width: 639px;
+	}
+}
+
+.ideas__publications-text:last-child {
+	margin-bottom: 0;
+}
+
+.ideas__footer {
+	text-align: center;
+}
+
+.ideas__link {
+	font-family: var(--font-family-Inter);
+	font-weight: 400;
+	line-height: 120%;
+	text-transform: capitalize;
+	color: var(--text-color);
+}
+
+.ideas__icon {
+	width: 30px;
+	height: 28px;
+	stroke: currentColor;
+}
+
+@media (width > 1024px) {
+	.ideas__publications-text {
+		font-size: 24px;
+	}
+	.ideas__link {
+		font-size: 24px;
+	}
+}
+
+@media (width <= 1014px) {
+	.ideas__publications-text {
+		font-size: 19px;
+	}
+	.ideas__link {
+		font-size: 19px;
+	}
+}

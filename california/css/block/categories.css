@@ -1,5 +1,6 @@
 .categories {
 	position: relative;
+	display: none;
 }
 
 .categories__header {

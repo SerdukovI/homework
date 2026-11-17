@@ -3,9 +3,6 @@ export const bannerSlider = () => {
 		slidesPerView: "auto",
 		centeredSlides: true,
 		loop: true,
-		mousewheel: {
-			ForceToAxis: true,
-		},
 		navigation: {
 			prevEl: ".banner__slider-button--prev",
 			nextEl: ".banner__slider-button--next",
