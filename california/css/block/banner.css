@@ -159,7 +159,7 @@
 	}
 }
 
-.banner-slide-button {
+.banner__slide-button {
 	font-family: var(--font-family-Inter);
 	font-weight: 400;
 	font-size: 18px;
@@ -175,7 +175,7 @@
 }
 
 @media (any-hover: hover) {
-	.banner-slide-button:hover {
+	.banner__slide-button:hover {
 		color: var(--bg-color);
 		background-color: var(--text-color);
 	}

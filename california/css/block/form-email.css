@@ -22,7 +22,7 @@
 	}
 }
 
-.form-email__button {
+.form-email__link {
 	font-family: var(--font-family-Inter);
 	border-radius: 0 200px 200px 0;
 	background: var(--text-color);
@@ -35,19 +35,19 @@
 }
 
 @media (any-hover: hover) {
-	.form-email__button:hover {
+	.form-email__link:hover {
 		opacity: 0.7;
 	}
 }
 
 @media (width > 567px) {
-	.form-email__button {
+	.form-email__link {
 		padding: 16px 33px 17px 32px;
 	}
 }
 
 @media (width <= 567px) {
-	.form-email__button {
+	.form-email__link {
 		padding: 16px 20px 17px 19px;
 	}
 }
