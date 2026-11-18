@@ -16,6 +16,8 @@
 	--card-bg-color: #f8f9fa;
 	--search-input-color: #c5c5c5;
 	--search-bg-color: #f8f9fa;
+	--looking-for-container-bg: #dce5e2;
+	--email-input-bg-color: #dce5e2;
 
 	/* shadow */
 	--shadow-glow: 0 4px 35px 0 var(--shadow-color);

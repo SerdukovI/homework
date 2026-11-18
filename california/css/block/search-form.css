@@ -4,15 +4,16 @@
 	margin-bottom: 18px;
 }
 
-.search-form__icon {
-	width: 30px;
-	height: 29px;
+.search-form__wrapper {
+	position: relative;
+	color: var(--text-color);
 }
 
 .search-form__input {
-	border: 1px solid var(#c5c5c5);
+	padding-left: 60px;
+	border: 1px solid var(--search-input-color);
 	border-radius: 100px;
-	min-width: 650px;
+	width: clamp(22.5rem, 12.027rem + 44.68vw, 40.625rem);
 	min-height: 60px;
 	background-color: var(--search-bg-color);
 }

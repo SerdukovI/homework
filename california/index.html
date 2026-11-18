@@ -583,19 +583,18 @@
 					</div>
 					<footer class="ideas__footer">
 						<a class="ideas__link" href="#">See all</a>
-						<svg width="30" height="28">
-							<use
-								class="ideas__icon"
-								href="./icon/ideas-sprite.svg#arrow-right-up"
-							></use>
+						<svg width="30" height="28" class="ideas__icon">
+							<use href="./icon/ideas-sprite.svg#arrow-right-up"></use>
 						</svg>
 					</footer>
 				</div>
 			</section>
-			<section class="looking-for section">
-				<div class="looking-for__container">
-					<div class="search">
-						<h2 class="search__title" lang="en">Looking for anything else?</h2>
+			<section class="looking-for">
+				<div class="container">
+					<div class="looking-for__search">
+						<h2 class="looking-for__title" lang="en">
+							Looking for anything else?
+						</h2>
 						<form class="search-form">
 							<div class="search-form__wrapper">
 								<svg
@@ -604,7 +603,9 @@
 									height="29"
 									stroke="currentColor"
 								>
-									<use href="./icon/searh-form.svg#searh-form-icon"></use>
+									<use
+										href="./icon/searh-form-sprite.svg#search-form-icon"
+									></use>
 								</svg>
 								<label for="search"></label>
 								<input
@@ -617,20 +618,191 @@
 								/>
 							</div>
 						</form>
-						<ul class="search__list">
-							<li class="search__item">iPhone</li>
-							<li class="search__item">Charger</li>
-							<li class="search__item"></li>
-							<li class="search__item"></li>
-							<li class="search__item"></li>
-							<li class="search__item"></li>
-							<li class="search__item"></li>
-							<li class="search__item"></li>
-							<li class="search__item"></li>
+						<ul class="looking-for__list">
+							<li class="looking-for__item">
+								<button class="looking-for__item-button" lang="en">
+									iPhone
+								</button>
+							</li>
+							<li class="looking-for__item">
+								<button class="looking-for__item-button" lang="en">
+									Charger
+								</button>
+							</li>
+							<li class="looking-for__item">
+								<button class="looking-for__item-button" lang="en">Gift</button>
+							</li>
+							<li class="looking-for__item">
+								<button class="looking-for__item-button" lang="en">
+									Google Pixel 3
+								</button>
+							</li>
+							<li class="looking-for__item">
+								<button class="looking-for__item-button" lang="en">
+									Keyboard
+								</button>
+							</li>
+							<li class="search__item">
+								<button class="looking-for__item-button" lang="en">
+									13 Pro Max
+								</button>
+							</li>
+							<li class="looking-for__item">
+								<button class="looking-for__item-button" lang="en">
+									iPhone 12
+								</button>
+							</li>
+							<li class="looking-for__item">
+								<button class="looking-for__item-button" lang="en">
+									Laptop
+								</button>
+							</li>
+							<li class="looking-for__item">
+								<button class="looking-for__item-button" lang="en">
+									Mobile
+								</button>
+							</li>
 						</ul>
+					</div>
+					<div class="looking-for__subscription">
+						<div class="looking-for__subscription-container">
+							<h2 class="looking-for__subscription-title" lang="en">
+								Never miss a thing
+							</h2>
+							<p class="looking-for__subscription-text" lang="en">
+								Sign up for texts to be notified about our best offers on the
+								perfect gifts.
+							</p>
+							<div class="looking-for__subscription-images-wrapper">
+								<picture>
+									<source
+										srcset="./images/subscription/subscription-img.webp"
+										type="image/webp"
+									/>
+									<img
+										class="looking-for__subscription-img"
+										src="./images/subscription/subscription-img.png"
+										width="233"
+										height="200"
+										alt="Два телефона и часы от Apple и на фоне ноутбук"
+									/>
+								</picture>
+							</div>
+							<form class="form-email">
+								<div class="form-email__wrapper">
+									<label for="email"></label>
+									<input
+										class="form-email__input"
+										id="email"
+										type="email"
+										name="email"
+										placeholder="Your email"
+										required
+									/>
+									<a class="form-email__link" href="">
+										<button class="form-email__button" lang="en">
+											Sign up
+										</button>
+									</a>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__content">
+					<div class="footer__description">
+						<a href="#" class="logo footer__logo-link">
+							<svg width="170" height="21" stroke="currentColor">
+								<use class="header__logo" href="./icon/sprite.svg#logo"></use>
+							</svg>
+						</a>
+						<h2 class="footer__description-text" lang="en">
+							Sign up for texts to be notified about our best offers on the
+							perfect gifts.
+						</h2>
+					</div>
+					<div class="footer__intelligence">
+						<h3 class="footer__intelligence-title" lang="en">All products</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Phones</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Watch</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Tablet</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Laptops</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__intelligence">
+						<h3 class="footer__intelligence-title" lang="en">Company</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">About</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Support</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__intelligence">
+						<h3 class="footer__intelligence-title" lang="en">Support</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Style Guide</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Licensing</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Change Log</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__intelligence">
+						<h3 class="footer__intelligence-title" lang="en">Follow Us</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Instagram</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Facebook</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">LinkedIn</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link" lang="en">Youtube</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__reference">
+					<div class="footer__reference-info">
+						<a href="#" class="footer__reference-link" lang="en">Made By:</a>
+						<span href="#" class="footer__reference-text">Azwedo</span>
+						<svg
+							class="footer__reference-icon"
+							width="21"
+							height="18"
+							stroke="currentColor"
+						>
+							<use href="./icon/footer-icon.svg"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
