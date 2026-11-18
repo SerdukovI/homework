@@ -9,6 +9,13 @@
 	color: var(--text-color);
 }
 
+.search-form__icon {
+	position: absolute;
+	left: 17px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .search-form__input {
 	padding-left: 60px;
 	border: 1px solid var(--search-input-color);

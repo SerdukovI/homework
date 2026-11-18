@@ -35,14 +35,23 @@
 
 @media (width <= 1024px) {
 	.title-h2 {
-		font-size: 40px;
+		font-size: 35px;
 	}
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus-visible {
 	outline: 2px solid var(--hover-color);
 	outline-offset: 2px;
+}
+
+input::placeholder {
+	font-family: var(--font-family-Inter);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	color: var(--text-color);
 }
 
 .section {

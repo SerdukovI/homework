@@ -196,8 +196,8 @@
 @media (width > 1440px) {
 	.banner__slide-img {
 		position: absolute;
-		width: 647px;
-		height: 550px;
+		min-width: 647px;
+		min-height: 550px;
 		top: 1%;
 		left: 55%;
 	}

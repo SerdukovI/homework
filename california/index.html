@@ -13,6 +13,7 @@
 			defer
 		></script>
 		<script src="./js/index.js" type="module"></script>
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
 		<title>Mobile phones and gadgets</title>
 	</head>
 	<body class="page__body">
@@ -583,9 +584,16 @@
 					</div>
 					<footer class="ideas__footer">
 						<a class="ideas__link" href="#">See all</a>
-						<svg width="30" height="28" class="ideas__icon">
-							<use href="./icon/ideas-sprite.svg#arrow-right-up"></use>
-						</svg>
+						<button class="ideas__button">
+							<svg
+								width="30"
+								height="28"
+								stroke="currentColor"
+								class="ideas__button-icon"
+							>
+								<use href="./icon/ideas-sprite.svg#arrow-up-right"></use>
+							</svg>
+						</button>
 					</footer>
 				</div>
 			</section>
@@ -603,9 +611,7 @@
 									height="29"
 									stroke="currentColor"
 								>
-									<use
-										href="./icon/searh-form-sprite.svg#search-form-icon"
-									></use>
+									<use href="./icon/searh-form-sprite.svg#search"></use>
 								</svg>
 								<label for="search"></label>
 								<input
@@ -666,7 +672,7 @@
 					</div>
 					<div class="looking-for__subscription">
 						<div class="looking-for__subscription-container">
-							<h2 class="looking-for__subscription-title" lang="en">
+							<h2 class="title-h2 looking-for__subscription-title" lang="en">
 								Never miss a thing
 							</h2>
 							<p class="looking-for__subscription-text" lang="en">
