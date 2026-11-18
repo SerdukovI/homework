@@ -182,13 +182,13 @@
 }
 
 @media (width > 567px) {
-	.banner-slide-button {
+	.banner__slide-button {
 		padding: 14px 53px;
 	}
 }
 
 @media (width <= 567px) {
-	.banner-slide-button {
+	.banner__slide-button {
 		padding: 9px 21px;
 	}
 }
