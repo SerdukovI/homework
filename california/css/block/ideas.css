@@ -1,3 +1,7 @@
+/* .ideas {
+	display: none;
+} */
+
 .ideas__container {
 	margin-inline: auto;
 	width: min(1350px, 100% - var(--container-padding) * 2);
