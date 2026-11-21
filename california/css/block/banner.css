@@ -101,7 +101,7 @@
 	.banner__slide-inner-left::after {
 		content: "";
 		position: absolute;
-		z-index: var(--layer-negative-1);
+		z-index: var(--layer-1);
 		bottom: 30px;
 		left: 1%;
 		width: 100%;
