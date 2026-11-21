@@ -45,10 +45,11 @@
 
 .collections__cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
 	gap: 40px 20px;
 	min-height: 453px;
 }
+
 
 .collections__article-card {
 	display: flex;
@@ -57,7 +58,19 @@
 	align-items: center;
 	border-radius: 16px;
 	background-color: var(--card-bg-color);
-	box-shadow: 0 4px 35px 0 var(--box-shadow-color);
+	transition: box-shadow var(--transition-time);
+}
+
+@media (width > 1440px){
+	.collections__article-card{
+		max-width: 413px;
+	}
+}
+
+@media (any-hover: hover){
+	.collections__article-card:hover{
+		box-shadow: 0 4px 35px 0 var(--box-shadow-color);
+	}
 }
 
 .collections__img {

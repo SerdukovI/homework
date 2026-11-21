@@ -3,6 +3,12 @@
 	/* display: none; */
 }
 
+.categories__container{
+	margin-inline: auto;
+	width: min(1294px, 100% - var(--container-padding) * 2);
+	min-height: 80px;
+}
+
 .categories__header {
 	display: flex;
 	align-items: center;

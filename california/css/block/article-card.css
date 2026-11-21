@@ -10,6 +10,10 @@
 	justify-content: center;
 }
 
+.arcticle-card__img{
+	margin: 28px;
+}
+
 .article-card__content {
 	display: flex;
 	flex-direction: column;
@@ -17,7 +21,7 @@
 }
 
 .article-card__title {
-	margin-top: 4px;
+	margin-top: 5px;
 	font-family: var(--font-family-Readex);
 	font-weight: 400;
 	font-size: 22px;
@@ -27,7 +31,7 @@
 }
 
 .article-card__text {
-	margin-top: 5px;
+	margin-top: 9px;
 	margin-bottom: 4px;
 	font-family: var(--font-family-Inter);
 	font-weight: 400;
@@ -39,7 +43,7 @@
 }
 
 .article-card__price {
-	margin-top: auto;
+	margin-top: 8px;
 	margin-bottom: 10px;
 	font-family: var(--font-family-Inter);
 	font-weight: 400;
@@ -47,4 +51,8 @@
 	line-height: 120%;
 	color: var(--text-color);
 	text-align: start;
+}
+
+.article-card__price--mt-accent{
+	margin-top: 25px;
 }

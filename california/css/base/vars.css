@@ -18,6 +18,10 @@
 	--search-bg-color: #f8f9fa;
 	--looking-for-container-bg: #dce5e2;
 	--email-input-bg-color: #dce5e2;
+	--banner-bg-color-second:#e8f0fe;
+	--banner-bg-color-third:#fdf5e6;
+
+
 
 	/* shadow */
 	--shadow-glow: 0 4px 35px 0 var(--shadow-color);

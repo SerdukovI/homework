@@ -2,4 +2,11 @@
 	margin-top: 28px;
 	padding-top: 128px;
 	/* display: none; */
+
+}
+
+.hero__container{
+	margin-inline: auto;
+	width: min(1294px, 100% - var(--container-padding) * 2);
+	min-height: 80px;
 }

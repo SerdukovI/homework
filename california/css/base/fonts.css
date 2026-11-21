@@ -12,9 +12,9 @@
 @font-face {
 	font-family: Readex;
 	src:
-		local("Readex Pro"),
-		local("Readex-p"),
-		url(../fonts/ReadexPro-Regular.ttf) format("ttf");
+		local("Readex Pro Regular"),
+		local("Readex-P"),
+		url(../fonts/ReadexPro-Regular.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;

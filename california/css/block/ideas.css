@@ -97,13 +97,18 @@
 	}
 }
 
+.ideas__publications{
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+}
+
 .ideas__publications-text {
 	font-family: var(--font-family-Inter);
 	font-weight: 400;
 	line-height: 125%;
 	color: var(--text-color);
 	margin-top: 14px;
-	margin-bottom: 23px;
 }
 
 @media (width > 1024px) {

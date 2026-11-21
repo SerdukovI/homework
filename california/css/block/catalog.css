@@ -283,7 +283,8 @@ rework the catalog */
 	.catalog__card--tablet .catalog__text-wrapper {
 		display: flex;
 		flex-direction: column;
-		align-items: end;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -298,8 +299,11 @@ rework the catalog */
 	text-align: right;
 }
 
-.catalog__card--watch .catalog__category {
-	text-align: center;
+@media (width > 1440px) {
+	.catalog__card--watch .catalog__category {
+	display: flex;
+	align-self: flex-end;
+}
 }
 
 .catalog__card--phone .catalog__category {
@@ -327,7 +331,7 @@ rework the catalog */
 }
 
 .catalog__card--watch .catalog__title {
-	text-align: center;
+	text-align: right;
 }
 
 .catalog__card--phone .catalog__title {

@@ -6,6 +6,9 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	margin-inline: auto;
+	width: min(1350px, 100% - var(--container-padding) * 2);
+	min-height: 80px;
 }
 .bestsellers__text {
 	font-family: var(--font-family-Readex);
