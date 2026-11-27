@@ -3,7 +3,7 @@
 const number = +prompt("Напишите число: ", 0);
 
 if (!isNaN(number)) {
-	if (number % 2 == 0) {
+	if (number % 2 === 0) {
 		alert(`Число четное: ${number}`);
 	} else {
 		alert(`Число нечетное: ${number}`);
@@ -16,8 +16,7 @@ if (!isNaN(number)) {
 
 const age = 21;
 let discount;
-discount =
-	age < 18 ? (discount = 10) : age <= 65 ? (discount = 20) : (discount = 30);
+discount = age < 18 ? 10 : age <= 65 ? 20 : 30;
 console.log(`Скидка:  ${discount} процентов`);
 
 console.log("Расчет скидки через switch case -->");
@@ -25,29 +24,24 @@ console.log("Расчет скидки через switch case -->");
 switch (true) {
 	case age < 18:
 		discount = 10;
-		console.log(`Скидка:  ${discount} процентов`);
 		break;
 	case age <= 65:
 		discount = 20;
-		console.log(`Скидка:  ${discount} процентов`);
 		break;
 	case age > 65:
 		discount = 30;
-		console.log(`Скидка:  ${discount} процентов`);
 		break;
 	default:
 		console.log("Что-то пошло не так!!");
 }
+console.log(`Скидка:  ${discount} процентов`);
 
 //Задача 3
 
-let username = prompt("Введите имя: ", "name");
-let password = prompt("Введите пароль: ", 0);
+const username = prompt("Введите имя: ", "name");
+const password = prompt("Введите пароль: ", 0);
 
-if (
-	(username == "admin" && password == 123456) ||
-	(username == "user" && password == 123456)
-) {
+if ((username === "admin" || username === "user") && password === "123456") {
 	console.log(` Имя: ${username} Пароль: ****** : Доступ разрешен`);
 } else {
 	console.log("Доступ запрещен!!!!");
@@ -56,17 +50,17 @@ if (
 //Задача 4
 //4.1
 
-const width = +prompt("Укажите вес посылки(в килограммах)");
+const weight = +prompt("Укажите вес посылки(в килограммах)");
 const type = prompt("Укажите тип посылки: Стандарт, Экспресс, Премиум.");
 let price;
 let coefficient;
 
 //4.2
 
-if (width <= 0) {
-	console.log(`Некорректный вес посылки: ${width}`);
+if (weight <= 0) {
+	console.log(`Некорректный вес посылки: ${weight}`);
 } else {
-	console.log(`Вес посылки: ${width} кг.`);
+	console.log(`Вес посылки: ${weight} кг.`);
 }
 
 switch (type) {
@@ -85,12 +79,12 @@ switch (type) {
 
 //4.3
 price =
-	width < 1
-		? (price = 5)
-		: width <= 5
-			? (price = 10)
-			: width > 5
-				? (price = 15)
+	weight < 1
+		? 5
+		: weight <= 5
+			? 10
+			: weight > 5
+				? 15
 				: console.log("Не удалось посчитать стоимость, проверьте данные");
 console.log(`Базовая стоимость доставки: ${price} $.`);
 
@@ -102,7 +96,6 @@ switch (type) {
 	case "Экспресс":
 		coefficient = 1.5;
 		break;
-		212;
 	case "Премиум":
 		coefficient = 2;
 		break;
